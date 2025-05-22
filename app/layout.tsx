@@ -4,7 +4,7 @@ import "./globals.css";
 import localFont from 'next/font/local'
 
 const google = localFont({
-    src: "../public/fonts/google.ttf",
+    src: "../public/fonts/helvetica.ttf",
     variable: "--font-google-sans"
 })
 
