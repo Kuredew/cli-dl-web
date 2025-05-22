@@ -1,5 +1,5 @@
 class Format {
-    setFormat(index: Number) {
+    setFormat(index: number) {
         window.localStorage.setItem('format', String(index))
 
         return true
@@ -7,7 +7,7 @@ class Format {
 
     getFormat() {
         if (typeof window !== 'undefined')  {
-            let format = Number(window.localStorage.getItem('format'))
+            const format = Number(window.localStorage.getItem('format'))
             if (format) {
                 return format
             } else {

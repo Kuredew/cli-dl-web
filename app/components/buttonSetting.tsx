@@ -9,9 +9,9 @@ export default function ButtonSetting() {
     const [formatState, setFormat] = useState(Number)
     const [resoState, setReso] = useState(Number)
 
-    let format
+
     const formatUtils = new Format()
-    format = formatUtils.getFormat()
+    const format = formatUtils.getFormat()
     
     function openClick() {
         if (isOpenSetting == true){

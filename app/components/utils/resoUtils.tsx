@@ -1,5 +1,5 @@
 export default class Reso {
-    setReso(reso: Number) {
+    setReso(reso: number) {
         if (typeof window !== 'undefined') {
             window.localStorage.setItem('reso', String(reso))
         }
@@ -7,8 +7,8 @@ export default class Reso {
 
     getReso() {
         if (typeof window !== 'undefined') {
-            let reso = Number(window.localStorage.getItem('reso'))
-            
+            const reso = Number(window.localStorage.getItem('reso'))
+
             if (reso) {
                 return reso
             } else {

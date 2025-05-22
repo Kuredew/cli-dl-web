@@ -1,4 +1,6 @@
-export default function Note(setState: Function) {
+import { SetStateAction } from "react"
+
+export default function Note(setState: (state: SetStateAction<boolean>) => void) {
     return (
         <div>
             <div className="font-mono fixed flex justify-center items-center w-screen h-screen bottom-0 left-0">

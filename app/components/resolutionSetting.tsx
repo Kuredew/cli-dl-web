@@ -1,9 +1,10 @@
+import { SetStateAction } from "react";
 import Reso from "./utils/resoUtils";
 
-export default function resolution(state: Number, setState: Function) {
+export default function resolution(state: number, setState: (state: SetStateAction<number>) => void) {
     const reso = new Reso()
 
-    let format: Number = reso.getReso()
+    let format: number = reso.getReso()
 
     return (
         <>
