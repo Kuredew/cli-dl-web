@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react"
+import { SetStateAction, useState } from "react"
 import error from "./errorPopup"
 import Format from "./utils/formatUtils"
 import Reso from "./utils/resoUtils"
@@ -9,7 +9,7 @@ import Note from "./notePopup"
 
 let inputValue: string
 
-async function handleForm(formData: FormData, state: Function, error: Function) {
+async function handleForm(formData: FormData, state: (state: SetStateAction<boolean>) => void, error: (state: SetStateAction<boolean>) => void) {
     state(true)
 
     inputValue = encodeURIComponent(String(formData.get('url')))

@@ -4,7 +4,7 @@ import Reso from "./utils/resoUtils";
 export default function resolution(state: number, setState: (state: SetStateAction<number>) => void) {
     const reso = new Reso()
 
-    let format: number = reso.getReso()
+    const format: number = reso.getReso()
 
     return (
         <>
