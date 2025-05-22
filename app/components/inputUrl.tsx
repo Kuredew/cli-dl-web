@@ -62,13 +62,6 @@ const InputUrl = () => {
         }
         handleForm(formData, setFetchingState, setError)
     }
-    
-    function set() {
-        if (isError) {
-            return
-        }
-        setError(true)
-    }
 
     return(
         <form action={formInitalize} key={'whataver'}>
